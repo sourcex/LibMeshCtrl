@@ -309,7 +309,7 @@ class Session {
                 throw Error("Invalid login key")
             }
             loginkey = Buffer.from(loginkey, 'hex')
-            if (ckey.length != 80) {
+            if (loginkey.length != 80) {
                 throw Error("Invalid login key.")
             }
             let domainid = '',
